@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>가을 아침</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<style>
+			body{background-image: url('img/aut.jpg'); background-size: 100%;}
+			.footer{text-align: center; margin-bottom: 50px;}
+			.thum:hover{opacity: 0.2;}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<header class="codrops-header">
+				<h1 style=";">가을 아침 <span>가을 아침의 소리들을 들어봅시다<br>클릭해 보세요! 무슨소리일까요?</span></h1>
+			</header>
+
+			<div class="content">			
+				<div class="grid">
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>새가 노래하는 <span>기분좋은 소리</span></h2>
+							<p>짹짹 예쁜 새소리를 들으면 <br>가을이 다가온 것만 같아요</p>
+						</figcaption>	
+						<img src="img/4.jpg" alt="img4" class="thum" id="b">
+						<audio src="sound/bird1.mp3" loop id="bs"></audio>	
+					</figure>
+
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>아이들이 <span>공원에서 노는 소리</span></h2>
+							<p>딱 공원에서 뛰어놀기 좋은 <br>시원한 계절이에요</p>
+						</figcaption>			
+						<img src="img/2.jpg" alt="img2" class="thum" id="c">
+						<audio src="sound/playground.mp3" loop id="cs"></audio>
+					</figure>
+				</div>
+
+		
+				<div class="grid">
+
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>바스락 바스락 <span>낙엽소리</span></h2>
+							<p>바스락거리는 낙엽소리는 <br>가을의 정취를 느끼게 해줘요</p>
+						</figcaption>
+						<img src="img/1.jpg" alt="img1" class="thum" id="j"/>
+						<audio src="sound/leaves.mp3" loop id="js"></audio>			
+					</figure>
+					
+				<figure class="effect-sadie">
+						<figcaption>
+							<h2>산들산들 <span>산바람 소리</span></h2>
+							<p>멀리서부터 불어오는 바람소리는 <br>마음을 흔들어요</p>
+						</figcaption>	
+						<img src="img/3.jpg" alt="img3" class="thum" id="p" />
+						<audio src="sound/wind.mp3" loop id="ps"></audio>		
+					</figure>
+
+				</div>
+
+				<div class="grid">
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>타닥타닥 <span>장작타는소리</span></h2>
+							<p>따듯한 장작을 슬슬 꺼내야 하는 <br>가을이 찾아왔네요</p>
+						</figcaption>	
+						<img src="img/5.jpg" alt="img5" class="thum" id="r" />
+						<audio src="sound/wood.mp3" loop id="rs"></audio>		
+					</figure>
+					<figure class="effect-sadie">
+						<figcaption>
+							<h2>귀뚤귀뚤 <span>귀뚜라미 소리</span></h2>
+							<p>귀뚜라미가 하는 노래는 넓은 들판을 떠올리게하고 <br>가을임을 알게해줘요</p>
+						</figcaption>	
+						<img src="img/6.jpg" alt="img6" class="thum" id="f" />
+						<audio src="sound/crickets.wav" loop id="fs"></audio>		
+					</figure>
+				</div>
+
+				<div class="footer">
+				<h4>　<br>　<br>IU - 가을아침</h4><audio src="sound/iu.mp3" type="audio/mp3" autoplay controls volume="0.1;" style="text-align: center;"></audio>
+	
+				</div>
+			</div></div>
+				
+
+		<script type="text/javascript">
+		var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+			b.style.opacity = "1";
+			bs.play();
+			bs.volume = 1.0; //볼륨 = 소리크기 조절
+			bstate = "on";
+		}else{
+			b.style.opacity = "0.2";
+			bs.pause();
+			bstate = "off";
+		}
+		}
+
+		var cstate = "off";
+		c.onclick = function(){
+			if(cstate == "off"){
+			c.style.opacity = "1";
+			cs.play();
+			cs.volume = 1.0;
+			cstate = "on";
+		}else{
+			c.style.opacity = "0.2";
+			cs.pause();
+			cstate = "off";
+		}
+		}
+
+		var jstate = "off";
+		j.onclick = function(){
+			if(jstate == "off"){
+			j.style.opacity = "1";
+			js.play();
+			js.volume = 1.0;
+			jstate = "on";
+		}else{
+			j.style.opacity = "0.2";
+			js.pause();
+			jstate = "off";
+		}
+		}
+
+		var pstate = "off";
+		p.onclick = function(){
+			if(pstate == "off"){
+			p.style.opacity = "1";
+			ps.play();
+			ps.volume = 0.4;
+			pstate = "on";
+		}else{
+			p.style.opacity = "0.2";
+			ps.pause();
+			pstate = "off";
+		}
+		}
+
+		var rstate = "off";
+		r.onclick = function(){
+			if(rstate == "off"){
+			r.style.opacity = "1";
+			rs.play();
+			rs.volume = 1.0;
+			rstate = "on";
+		}else{
+			r.style.opacity = "0.2";
+			rs.pause();
+			rstate = "off";
+		}
+		}
+
+		var fstate = "off";
+		f.onclick = function(){
+			if(fstate == "off"){
+			f.style.opacity = "1";
+			fs.play();
+			fs.volume = 0.3;
+			fstate = "on";
+		}else{
+			f.style.opacity = "0.2";
+			fs.pause();
+			fstate = "off";
+		}
+		}
+	</script>
+
+
+	</body>
+</html>
